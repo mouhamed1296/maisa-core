@@ -9,6 +9,7 @@ categories = ["no-std", "embedded", "science"]
 keywords = ["monitoring", "supervision", "fault-detection", "no-std"]
 readme = "README.md"
 documentation = "https://docs.rs/maisa-core"
+repository = "https://github.com/mouhamed1296/maisa-core"
 # Ship only the library. Test traces (21 MB) and tooling stay in the source tree.
 include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE-MIT", "LICENSE-APACHE"]
 
