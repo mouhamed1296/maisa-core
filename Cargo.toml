@@ -1,0 +1,25 @@
+[package]
+name = "maisa-core"
+version = "0.1.0"
+edition = "2021"
+description = "MA-ISA: Multi-Axis Integrated State Accumulation. no_std reference implementation of Mathematical Specification 1.0."
+license = "MIT OR Apache-2.0"
+authors = ["Mamadou Sarr"]
+categories = ["no-std", "embedded", "science"]
+keywords = ["monitoring", "supervision", "fault-detection", "no-std"]
+readme = "README.md"
+documentation = "https://docs.rs/maisa-core"
+# Ship only the library. Test traces (21 MB) and tooling stay in the source tree.
+include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE-MIT", "LICENSE-APACHE"]
+
+[dependencies]
+libm = "0.2"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "deny"
+
+[lints.clippy]
+# Comparisons are deliberately written in negated form so that NaN falls on
+# the safe side (a NaN is never "in range", "sane" or "below the cap").
+neg_cmp_op_on_partial_ord = "allow"
