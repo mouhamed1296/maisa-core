@@ -78,3 +78,7 @@ well-formed data:
 - It has not been cross-compiled for a microcontroller target here. `no_std`
   is enforced by the compiler on the host; building for ESP32 or Cortex-M
   remains to be confirmed on your machine.
+
+## License
+
+MIT. See [LICENSE](LICENSE).

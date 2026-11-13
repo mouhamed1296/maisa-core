@@ -3,7 +3,7 @@ name = "maisa-core"
 version = "0.1.0"
 edition = "2021"
 description = "MA-ISA: Multi-Axis Integrated State Accumulation. no_std reference implementation of Mathematical Specification 1.0."
-license = "MIT OR Apache-2.0"
+license = "MIT"
 authors = ["Mamadou Sarr"]
 categories = ["no-std", "embedded", "science"]
 keywords = ["monitoring", "supervision", "fault-detection", "no-std"]
@@ -11,7 +11,7 @@ readme = "README.md"
 documentation = "https://docs.rs/maisa-core"
 repository = "https://github.com/mouhamed1296/maisa-core"
 # Ship only the library. Test traces (21 MB) and tooling stay in the source tree.
-include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE-MIT", "LICENSE-APACHE"]
+include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE"]
 
 [dependencies]
 libm = "0.2"
